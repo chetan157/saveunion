@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Europe - Donation Website</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?roman,architecture,statue,sword,warrior') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgba(30, 30, 30, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.7);
+        }
+        .donation-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(50, 50, 50, 0.9);
+            border-radius: 10px;
+        }
+        .donate-buttons button {
+            background: linear-gradient(45deg, #FFD700, #FF4500);
+            color: white;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .donate-buttons button:hover {
+            background: linear-gradient(45deg, #FF8C00, #8B0000);
+            transform: scale(1.1);
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #FFD700;
+            margin: 0 15px;
+            font-size: 26px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Save Europe's Heritage 🏛️⚔️</h1>
+        <p><strong>Stand for Europe's legacy! Your donation funds peaceful protests and cultural preservation. 💙</strong></p>
+        
+        <div class="donation-section">
+            <h2>Make a Difference 💰</h2>
+            <div class="donate-buttons">
+                <button onclick="paypalDonate()">Donate via PayPal</button>
+                <button onclick="razorpayDonate()">Donate via Razorpay</button>
+                <button onclick="stripeDonate()">Donate via Stripe</button>
+            </div>
+        </div>
+        
+        <h2>Follow Us 📢</h2>
+        <div class="social-links">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+    </div>
+    
+    <script>
+        function paypalDonate() {
+            alert("Redirecting to PayPal...");
+        }
+        function razorpayDonate() {
+            alert("Redirecting to Razorpay...");
+        }
+        function stripeDonate() {
+            alert("Redirecting to Stripe...");
+        }
+    </script>
+</body>
+</html>
